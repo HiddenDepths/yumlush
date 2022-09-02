@@ -83,8 +83,8 @@ document.querySelector(".days").getElementsByTagName("p")[d].classList.add("toda
 async function getPhotos() {
   var photos = []
 
-  var token = "EAAEvYDABMdIBANv4KW0ymk5mJitELaik8irpgLhEyAL3ZAWuqxDr4v3PZAoyLoANb7WlRSCDuIe4FmaQ5AwdcVWkF2l3WdXDVUhHzMetlJLMkdLI46FXQiINBrIZCaLuaFelhvxKwR4FOLE9ytKaw9mBlh1a1BI2Cb0lsRs8n9CvI7VCy8ZAq9OYjENdjZCUZD"
-  var id = "104157489011367"
+  var token = atob("RUFBR2R3dHpINVVvQkFOOXE4b0VQclpBdDk2dFM2SEowc3RaQXd6OGpsSzJaQkdYblhWUjVGclk5Uld2cENaQmoybTJlOEIzUXdMWkI5RXcyd3EwZHZmaW5sZzF6VzJ1WkFHdzhidHpRcWNHZndBZTlONjVpenpVVjJJc3VZQmNLWkI3SEhjR3FKRW1DY0RnN01oNFdwdnh4Q2E3S1FGRDUxejRYaHlBOWFaQ2FrVmxnRHRGUndldTQ=")
+  var id = "931381780208349"
   fetch(`https://graph.facebook.com/${id}/posts?access_token=${token}`)
     .then(response => response.json())
     .then(data => {
