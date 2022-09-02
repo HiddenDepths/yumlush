@@ -12,6 +12,7 @@
 
   .nav p:last-child {
     position: relative;
+    border-radius: 10px;
   }
 
   .nav img {
